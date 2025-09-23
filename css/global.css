@@ -85,6 +85,11 @@ footer {
     margin: 0 auto;
 }
 
+.footer-col .footer-logo{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
 .footer-col {
     flex: 1;
     min-width: 160px;
