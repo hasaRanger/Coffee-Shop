@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2opx;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    padding: 0 20px 0 0;
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-container img {
+    padding-left: 10px;
+    display:flex;
+    height: 60px;
+}
+
+.navbar .shopName {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.navbar .menu-left {
+    margin-left: 50%;
+}
