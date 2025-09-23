@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 body {
@@ -17,9 +18,11 @@ html {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
     background: #25231c;
     height: 100px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .navbar-left{   /*Home, Menu, Order*/
@@ -68,21 +71,39 @@ html {
 
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar left, .navbar-right {
+        margin-top: 10px;
+    }
+}
+
 footer {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background: #25231c;
-    padding: 40px 60px;
+    padding: 40px 0;
+    width: 100%;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 30px;
     width: 100%;
-    max-width: 1400px;
+    padding: 0 20px;
     margin: 0 auto;
+}
+
+.footer-col .footer-logo{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
 }
 
 .footer-col {
